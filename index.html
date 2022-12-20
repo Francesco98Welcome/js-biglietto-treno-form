@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto del treno</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <div class="form-biglietto">
+            <div class="dati-biglietto">
+                <div>
+                    <h4>Nome e Cognome</h4>
+                    <input type="text" id="first-name" placeholder="Inserisci nome e cognome">
+                </div>
+                <div>
+                    <h4>Km da percorrere</h4>
+                    <input type="number" id="km" placeholder="Inserisci i km che vuoi percorrere">
+                </div>
+                <div>
+                    <h4>Fascia d'età</h4>
+                    <select name="age" id="age">
+                       <option value="Minorenne">Minorenne</option>
+                       <option value="Maggiorenne">Maggiorenne</option>
+                       <option value="Over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
+               <button id="btn-genera">Genera</button>
+               <button id="btn-annulla">Annulla</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="biglietto-generato">
+            <h2>DETTAGLI PASSEGGERO</h2>
+            <div class="dettagli-passeggero">
+                <div class="nome-passeggero">
+                    <h2>NOME PASSEGGERO</h2>
+                    <span id="name-pass"></span>
+                </div>
+                <div class="info-passeggero">
+                    <div>
+                        <h3>Offerta</h3>
+                        <p class="p-offerta"></p>
+                    </div>
+                    <div>
+                        <h3>Carrozza</h3>
+                        <p class="p-carrozza"></p>
+                    </div>
+                    <div>
+                        <h3>Codice CP</h3>
+                        <p class="p-cp"></p>
+                    </div>
+                    <div>
+                        <h3>Costo biglietto</h3>
+                        <p class="p-price"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

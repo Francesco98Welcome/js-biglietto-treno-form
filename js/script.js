@@ -22,6 +22,12 @@ let container2 = document.querySelector('.container-2');
 // sconto per minorenni 20%;
 // sconto per over 65 40%;
 
+/*   
+     La funzione recupera l'input dell'utente (nome, km percorsi e fascia d'età)
+     e calcola il costo del viaggio senza sconti applicati. Successivamente, determina
+     quale offerta applicare in base all'età del passeggero, calcola lo sconto corrispondente
+     e aggiorna il prezzo finale
+*/
 
 btnGenera.addEventListener('click', myFunction);
 
@@ -53,6 +59,11 @@ function myFunction() {
     mostraBiglietto();
 
 }
+
+/* 
+    Infine, la funzione richiama altre tre funzioni (carrozzaFunction, codiceCpFunction e mostraBiglietto) 
+    che mostrano all'utente i dettagli del biglietto (carrozza, codice CP e prezzo finale).
+*/
 
 function carrozzaFunction() {
     let numbRandom = Math.floor(Math.random() * 10) + 1;
